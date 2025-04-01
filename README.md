@@ -64,6 +64,10 @@ npm run dev
 
 [Notion](https://pouncing-suede-9e1.notion.site/Projects-Tasks-18cfb1f9fcb0809ba29ef0c5d02a0d8c)
 
+## Mockup
+
+[Figma](https://www.figma.com/design/4rMbHT22orkUMImPua5380/EASYREPAIR?node-id=5-14862)
+
 ## Integrantes
 
 *  [Daniel Santiago Torres Acosta](https://github.com/RulosS290)
