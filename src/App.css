@@ -1,6 +1,10 @@
 #root {
   background-color: #C2D2D3;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
