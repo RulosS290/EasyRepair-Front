@@ -5,7 +5,7 @@ import logo from "../assets/img/easyrepair-mini.png";
 import "../assets/css/NavBar.css"
 
 const NavBar = () => {
-  const isLogging = true;
+  const isLogging = false;
 
   const visibleAuthItems = isLogging
     ? [authMenuItems[2]]
