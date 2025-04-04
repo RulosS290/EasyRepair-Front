@@ -5,4 +5,10 @@ const menuItems = [
   { icon: "FaInfoCircle", link: "/info" },
 ];
 
-export default menuItems;
+const authMenuItems = [
+  { icon: "FaSignInAlt", link: "/login", text: "Login" },
+  { icon: "FaUserPlus", link: "/register", text: "Registrarse" },
+  { icon: "FaSignOutAlt", link: "/logout", text: "Salir" },
+];
+
+export { menuItems, authMenuItems };
