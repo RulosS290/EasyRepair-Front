@@ -1,6 +1,7 @@
 import Login from './components/login'
 import './App.css'
 import NavBar from './layouts/navBar'
+import Appointment from './components/appointments'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <Login></Login>
+      <Appointment></Appointment>
     </>
   )
 }
