@@ -2,14 +2,14 @@ import * as FaIcons from "react-icons/fa";
 import NavItem from "./NavItem";
 import { menuItems, authMenuItems} from "../data/menuItem"
 import logo from "../assets/img/easyrepair-mini.png";
-import "../assets/css/NavBar.css"
+import "../assets/css/navBar.css"
 
 const NavBar = () => {
   const isLogging = false;
 
   const visibleAuthItems = isLogging
-    ? [authMenuItems[2]]
-    : authMenuItems.slice(0, 2);
+    ? [authMenuItems[1]]
+    : [authMenuItems[0]]
 
   return (
     <header className="header">

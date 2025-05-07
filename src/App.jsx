@@ -1,13 +1,24 @@
-import Login from './components/login';
-import './App.css';
-import NavBar from './layouts/navBar';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './layouts/NavBar';
+import AuthForm from './views/AuthForm';
+import Home from './views/Home';
+import User from './views/User';
 import Appointment from './components/appointments';
 import Profile from './components/profile';
+
+import './App.css';
 
 function App() {
   return (
     <>
       <NavBar />
+      <Routes>  
+        <Route path="/" element={<Home />} />  {/* Rutas con 'element' para pasar el JSX */}
+        <Route path="/login" element={<AuthForm />} />
+        <Route path="/user" element={<User />} />
+      </Routes>
+
       <Login />
       <Appointment />
       <Profile 
