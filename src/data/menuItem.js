@@ -6,8 +6,7 @@ const menuItems = [
 ];
 
 const authMenuItems = [
-  { icon: "FaSignInAlt", link: "/login", text: "Login" },
-  { icon: "FaUserPlus", link: "/register", text: "Registrarse" },
+  { icon: "FaSignInAlt", link: "/login", text: "Entrar" },
   { icon: "FaSignOutAlt", link: "/logout", text: "Salir" },
 ];
 

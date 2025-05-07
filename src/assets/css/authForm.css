@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    background-color: #C2D2D3;
+    font-family: sans-serif;
+  }
+  
+  .auth-wrapper {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  
+  /* Caja del formulario */
+  .parent {
+    background-color: #3b3f40;
+    border-radius: 15px;
+    box-shadow: 01px 4px 15px rgba(0, 0, 0, 0.5);
+  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+  
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+  }
+  
+  /* Posiciones de los elementos */
+  .div1 {
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: center;
+  }
+  
+  .div2, .div3, .div4 {
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .div4 {
+    margin: 10px 0;
+    gap: 20px;
+  }
+  
+  .div5 {
+    grid-area: 5 / 2 / 6 / 3;
+    text-align: center;
+  }
+  
+  /* Estilo inputs */
+  input[type="text"],
+  input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  /* Estilo botones */
+  input[type="submit"] {
+    background-color: #65D2EF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #49c0df;
+  }
+  
+  .switch-container {
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  .switch input:checked + .slider {
+    background-color: #FD762F;
+  }
+  
+  .switch input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .active-label {
+    text-decoration:underline;
+    color: #FD762F;
+  }
+  
+  .div4 label {
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 18px;
+  }
+  
+  .div4 input[type="radio"] {
+    accent-color: #FD762F; /* Esto cambia el color del radio seleccionado */
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
